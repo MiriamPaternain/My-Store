@@ -1,5 +1,11 @@
+import ProductsList from './ProductsList';
+
 function ProductsPage() {
-  return <></>;
+  return (
+    <>
+      <ProductsList />
+    </>
+  );
 }
 
 export default ProductsPage;
