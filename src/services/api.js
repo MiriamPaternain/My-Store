@@ -1,8 +1,16 @@
 const getDataFromApi = () => {
   return fetch('https://fakestoreapi.com/products')
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.statusText}`);
+      }
+      return response.json();
+    })
     .then((data) => {
-      const cleanData = data.results.map((objectApi) => {
+      if (!data) {
+        throw new Error('Data is undefined');
+      }
+      const cleanData = data.map((objectApi) => {
         return {
           id: objectApi.id,
           title: objectApi.title,
@@ -14,6 +22,10 @@ const getDataFromApi = () => {
         };
       });
       return cleanData;
+    })
+    .catch((error) => {
+      console.error('Error fetching products:', error);
+      throw error;
     });
 };
 
