@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function AccessButton() {
   return (
-    <Link to='/ProductsPage'>
+    <Link to='/ProductsPage' className='link'>
       <button className='landingButton'>
         <img
           src={flechaDoble}
