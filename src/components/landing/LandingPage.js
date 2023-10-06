@@ -1,4 +1,4 @@
-import flechaDoble from '../../img/doble-derecha.png';
+import AccessButton from './AccessButton';
 
 function LandingPage() {
   return (
@@ -10,14 +10,7 @@ function LandingPage() {
         </p>
       </div>
 
-      <button className='landingButton'>
-        <img
-          src={flechaDoble}
-          alt='icono flecha doble hacia la derecha'
-          className='landingButton_arrows'
-        />
-        <span className='landingButton_word'>Accede</span>
-      </button>
+      <AccessButton />
     </main>
   );
 }
