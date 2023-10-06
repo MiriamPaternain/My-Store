@@ -1,10 +1,58 @@
-.landingBackground {
-  width: 100vw;
+.main {
+  background-image: url('../img/landingBackground.jpg');
+  background-size: cover;
+  background-position: center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    &--title {
+      padding: 15px;
+      font-size: 3rem;
+      color: #bdb2aa;
+    }
+
+    &--quote {
+      font-size: 1.4rem;
+      color: #bdb2aa;
+    }
+  }
 }
 
 .landingButton {
-  transform: translate(500px, -500px);
+  margin-top: 30px;
+
   height: 100px;
   width: 200px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  box-shadow: 5px 8px 8px #2d2321;
+  cursor: pointer;
+
+  &_arrows {
+    transform: translate(-8px);
+  }
+
+  &_word {
+    transform: translate(-5px);
+    color: #695d58;
+  }
+}
+
+.landingButton:hover {
+  width: 205px;
+  height: 105px;
 }
