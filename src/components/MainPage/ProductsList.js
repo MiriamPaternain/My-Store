@@ -11,16 +11,22 @@ const ProductsList = () => {
       .catch((error) => console.error('error fetching products'));
   }, []); //array vacío para asegurar que el useEffect se ejecute solo una vez
   return (
-    <div>
-      <h1>Lista de productos</h1>
-      <ul>
+    <div className='productList_containter'>
+      <h1 className='productList_container--title'>Lista de productos</h1>
+      <ul className='productList_list'>
         {products.map((product) => (
-          <li key={product.id}>
-            <p>{product.title}</p>
-            <p>{product.price}</p>
-            <p>{product.description}</p>
-            <p>{product.category}</p>
-            <img src={product.image} alt={product.title} />
+          <li key={product.id} className='productList_eachItem'>
+            <img
+              src={product.image}
+              alt={product.title}
+              className='productList_eachItem--img'
+            />
+            <p className='productList_eachItem--title'>{product.title}</p>
+            <p className='productList_eachItem--price'>{product.price}</p>
+            <p className='productList_eachItem--description'>
+              {product.description}
+            </p>
+            <p className='productList_eachItem--category'>{product.category}</p>
           </li>
         ))}
       </ul>
