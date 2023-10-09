@@ -12,7 +12,7 @@ const ProductsList = () => {
   }, []); //array vacío para asegurar que el useEffect se ejecute solo una vez
   return (
     <div className='productList_containter'>
-      <h1 className='productList_container--title'>Lista de productos</h1>
+      <h1 className='productList_container--title'>All the products</h1>
       <ul className='productList_list'>
         {products.map((product) => (
           <li key={product.id} className='productList_eachItem'>
