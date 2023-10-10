@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import getDataFromApi from '../../services/api';
+import { Link } from 'react-router-dom';
+import DetailProduct from './DetailProduct';
 
 const ProductsList = () => {
   const [products, setProducts] = useState([]);
@@ -16,17 +18,21 @@ const ProductsList = () => {
       <ul className='productList_list'>
         {products.map((product) => (
           <li key={product.id} className='productList_eachItem'>
-            <img
-              src={product.image}
-              alt={product.title}
-              className='productList_eachItem--img'
-            />
-            <p className='productList_eachItem--title'>{product.title}</p>
-            <p className='productList_eachItem--price'>{product.price}</p>
-            <p className='productList_eachItem--description'>
-              {product.description}
-            </p>
-            <p className='productList_eachItem--category'>{product.category}</p>
+            <Link to={`/product/${product.id}`}>
+              <img
+                src={product.image}
+                alt={product.title}
+                className='productList_eachItem--img'
+              />
+              <p className='productList_eachItem--title'>{product.title}</p>
+              <p className='productList_eachItem--price'>{product.price}</p>
+              <p className='productList_eachItem--description'>
+                {product.description}
+              </p>
+              <p className='productList_eachItem--category'>
+                {product.category}
+              </p>
+            </Link>
           </li>
         ))}
       </ul>
