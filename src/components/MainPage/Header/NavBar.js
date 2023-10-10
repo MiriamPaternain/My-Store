@@ -1,21 +1,23 @@
+import { Link } from 'react-router-dom';
+
 function NavBar({ menuOpen, handleClick }) {
   return (
     <>
       {menuOpen && (
         <div className='modal'>
           <div className='navBar'>
-            <a href='/contact' onClick={handleClick} className='link'>
+            <Link to='/' onClick={handleClick} className='link'>
               Landing Page
-            </a>
-            <a href='/contact' onClick={handleClick} className='link'>
+            </Link>
+            <Link to='/ProductsPage' onClick={handleClick} className='link'>
               Products
-            </a>
-            <a href='/contact' onClick={handleClick} className='link'>
+            </Link>
+            <Link to='/' onClick={handleClick} className='link'>
               Shopping cart
-            </a>
-            <a href='/contact' onClick={handleClick} className='link'>
+            </Link>
+            <Link to='/contact' onClick={handleClick} className='link'>
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}
