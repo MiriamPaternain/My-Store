@@ -22,7 +22,7 @@ const ProductsList = () => {
               className='productList_eachItem--img'
             />
             <p className='productList_eachItem--title'>{product.title}</p>
-            <p className='productList_eachItem--price'>{product.price}</p>
+            <p className='productList_eachItem--price'>{product.price} €</p>
             <p className='productList_eachItem--description'>
               {product.description}
             </p>

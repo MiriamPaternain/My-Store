@@ -6,6 +6,7 @@ import LandingPage from './landing/LandingPage';
 import getDataFromApi from '../services/api';
 import ls from '../services/localStorage';
 import DetailProduct from './MainPage/DetailProduct';
+import FilterProducts from './MainPage/FilterProducts';
 
 function App() {
   const [ProductsList, setProductsList] = useState(ls.get('products', []));
@@ -28,7 +29,10 @@ function App() {
           path='/product/:id'
           element={<DetailProduct products={ProductsList} />}
         />
-        <Route path='/products/category/:category' element={<ProductsPage />} />
+        <Route
+          path='/products/category/:category'
+          element={<FilterProducts />}
+        />
       </Routes>
     </>
   );
