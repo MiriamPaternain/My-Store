@@ -10,7 +10,7 @@ function NavBar({ menuOpen, handleClick }) {
               Landing Page
             </Link>
             <Link to='/ProductsPage' onClick={handleClick} className='link'>
-              Products
+              AllProducts
             </Link>
             <Link to='/' onClick={handleClick} className='link'>
               Shopping cart
