@@ -28,6 +28,10 @@ function App() {
           path='/product/:id'
           element={<DetailProduct products={ProductsList} />}
         />
+<<<<<<< HEAD
+=======
+        <Route path='/products/category/:category' element={<ProductsPage />} />
+>>>>>>> main
       </Routes>
     </>
   );
