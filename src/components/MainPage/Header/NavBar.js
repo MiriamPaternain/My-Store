@@ -2,15 +2,16 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function NavBar({ menuOpen, handleClick }) {
-  const [category, setCategory] = useState([]);
+  const [categories, setCategories] = useState([]);
 
-  //call to API to obtain categories
+  // Llamada a la API para obtener categorías
   useEffect(() => {
     fetch('https://fakestoreapi.com/products/categories')
       .then((response) => response.json())
-      .then((data) => setCategory(data))
+      .then((data) => setCategories(data))
       .catch((error) => console.error('Error fetching categories:', error));
   }, []);
+
   return (
     <>
       {menuOpen && (
@@ -22,22 +23,23 @@ function NavBar({ menuOpen, handleClick }) {
             <Link to='/ProductsPage' onClick={handleClick} className='link'>
               AllProducts
             </Link>
-            {category.length > 0 && (
+            {categories.length > 0 && (
               <ul className='subcategories'>
-                {category.map((category, index) => (
+                {categories.map((categoryItem, index) => (
                   <li key={index}>
+                    {/* Cada categoría tiene su propia ruta */}
                     <Link
-                      to={`/products/${category}`}
+                      to={`/products/category/${categoryItem}`}
                       onClick={handleClick}
                       className='subcategories_link'>
-                      {category}
+                      {categoryItem}
                     </Link>
                   </li>
                 ))}
               </ul>
             )}
 
-            <Link to='/' onClick={handleClick} className='link'>
+            <Link to='/cart' onClick={handleClick} className='link'>
               Shopping cart
             </Link>
             <Link to='/contact' onClick={handleClick} className='link'>

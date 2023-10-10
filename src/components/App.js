@@ -28,6 +28,7 @@ function App() {
           path='/product/:id'
           element={<DetailProduct products={ProductsList} />}
         />
+        <Route path='/products/category/:category' element={<ProductsPage />} />
       </Routes>
     </>
   );

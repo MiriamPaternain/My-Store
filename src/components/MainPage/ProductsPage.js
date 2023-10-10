@@ -6,7 +6,7 @@ function ProductsPage() {
   return (
     <>
       <Nav />
-      <FilterProducts />
+
       <ProductsList />
     </>
   );
