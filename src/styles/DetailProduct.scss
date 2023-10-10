@@ -1,0 +1,31 @@
+.detailProduct {
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  &_title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    font-size: 1.2rem;
+  }
+
+  &_image {
+    height: 50%;
+    width: 50%;
+  }
+
+  &_description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+  }
+
+  &_price {
+  }
+
+  &_category {
+  }
+}

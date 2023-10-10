@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import getDataFromApi from '../../services/api'; // Ajusta la ruta de importación según la ubicación de tu archivo getDataFromApi
+import getDataFromApi from '../../services/api';
+import NavBar from './Header/NavBar';
 
 function FilterProducts() {
   const { category } = useParams();
@@ -23,6 +24,7 @@ function FilterProducts() {
 
   return (
     <>
+      <NavBar />
       <h2 className='filterProducts_title'>{category}</h2>
       <ul className='productList_list'>
         {filteredProducts.map((product) => (

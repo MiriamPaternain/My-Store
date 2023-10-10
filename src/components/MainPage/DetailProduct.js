@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import Header from '../MainPage/Header/Header';
+
 const DetailProduct = ({ products }) => {
   const { id } = useParams();
 
@@ -20,7 +21,7 @@ const DetailProduct = ({ products }) => {
           className='detailProduct_image'
         />
         <p className='detailProduct_description'>{product.description}</p>
-        <p className='detailProduct_price'>{product.price}</p>
+        <p className='detailProduct_price'>{product.price} €</p>
       </div>
     </>
   );
