@@ -1,6 +1,15 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function NavBar({ menuOpen, handleClick }) {
+  const [category, setCategory] = useState([]);
+  //call to API to obtain category
+  useEffect(() => {
+    fetch('https://fakestoreapi.com/products/categories')
+      .then((response) => response.json())
+      .then((data) => setCategory(data))
+      .catch((error) => console.error('Error fetching categories:', error));
+  }, []);
   return (
     <>
       {menuOpen && (
@@ -10,8 +19,22 @@ function NavBar({ menuOpen, handleClick }) {
               Landing Page
             </Link>
             <Link to='/ProductsPage' onClick={handleClick} className='link'>
-              Products
+              AllProducts
             </Link>
+            {category.length > 0 && (
+              <ul className='subcategories'>
+                {category.map((category, index) => (
+                  <li key={index}>
+                    <Link
+                      to={`/products/${category}`}
+                      onClick={handleClick}
+                      className='linkSubcategories'>
+                      {category}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
             <Link to='/' onClick={handleClick} className='link'>
               Shopping cart
             </Link>
