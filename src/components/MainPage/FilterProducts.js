@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import getDataFromApi from '../../services/api';
 import { Link } from 'react-router-dom';
 import Header from './Header/Header';
+import BackButton from '../BackButton';
 
 function FilterProducts() {
   const { category } = useParams();
@@ -26,6 +27,7 @@ function FilterProducts() {
   return (
     <>
       <Header />
+      <BackButton />
       <h2 className='filterProducts_title'>{category}</h2>
       <ul className='productList_list'>
         {filteredProducts.map((product) => (
