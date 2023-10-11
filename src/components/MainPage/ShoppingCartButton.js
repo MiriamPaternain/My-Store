@@ -1,7 +1,9 @@
-function ShoppingCartButton({ onClick }) {
+function ShoppingCartButton({ product, onClick }) {
   return (
     <>
-      <button onClick={onclick}>🛒</button>
+      <button onClick={onclick} className='shoppinCartButton'>
+        🛒
+      </button>
     </>
   );
 }

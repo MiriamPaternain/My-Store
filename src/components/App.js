@@ -8,9 +8,11 @@ import ls from '../services/localStorage';
 import DetailProduct from './MainPage/DetailProduct';
 import FilterProducts from './MainPage/FilterProducts';
 import ShoppingCart from './MainPage/ShoppingCart';
+import ShoppingCartButton from './MainPage/ShoppingCartButton';
 
 function App() {
   const [ProductsList, setProductsList] = useState(ls.get('products', []));
+
   const [boughtItems, setBoughtItems] = useState([]);
 
   useEffect(() => {
@@ -21,6 +23,10 @@ function App() {
       });
     }
   }, []);
+
+  const handleAddToCart = (product) => {
+    setBoughtItems([...boughtItems, product]);
+  };
 
   return (
     <>

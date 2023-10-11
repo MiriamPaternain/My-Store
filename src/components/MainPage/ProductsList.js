@@ -1,16 +1,18 @@
 import { useEffect, useState } from 'react';
 import getDataFromApi from '../../services/api';
 import { Link } from 'react-router-dom';
+import ShoppingCartButton from './ShoppingCartButton';
 
 const ProductsList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    //llamo a la función prar obtener datos desde la API
+    //call to API to obtain products
     getDataFromApi()
       .then((data) => setProducts(data))
       .catch((error) => console.error('error fetching products'));
-  }, []); //array vacío para asegurar que el useEffect se ejecute solo una vez
+  }, []);
+
   return (
     <div className='productList_containter'>
       <h1 className='productList_container--title'>All the products</h1>
@@ -24,14 +26,14 @@ const ProductsList = () => {
                 className='productList_eachItem--img'
               />
               <p className='productList_eachItem--title'>{product.title}</p>
-              <p className='productList_eachItem--price'>{product.price} €</p>
-              <p className='productList_eachItem--description'>
-                {product.description}
-              </p>
-              <p className='productList_eachItem--category'>
-                {product.category}
-              </p>
             </Link>
+            <p className='productList_eachItem--price'>
+              {product.price} € <ShoppingCartButton />
+            </p>
+            <p className='productList_eachItem--description'>
+              {product.description}
+            </p>
+            <p className='productList_eachItem--category'>{product.category}</p>
           </li>
         ))}
       </ul>
