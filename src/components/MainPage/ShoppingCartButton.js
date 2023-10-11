@@ -30,9 +30,13 @@ function AddedtoCartModal({ isModalOpen, onRequestClose }) {
       isOpen={isModalOpen}
       onRequestClose={onRequestClose}
       contentLabel='Product added to cart'>
-      <h2>Product added to cart</h2>
-      <p>This product has beend added to your shopping cart.</p>
-      <button onClick={onRequestClose}>Close</button>
+      <div className='productAddedModal'>
+        <h2 className='productAddedModal_title'>Product added to cart</h2>
+        <p className='productAddedModal_text'>
+          This product has beend added to your shopping cart.
+        </p>
+        <button onClick={onRequestClose}>Close</button>
+      </div>
     </Modal>
   );
 }
