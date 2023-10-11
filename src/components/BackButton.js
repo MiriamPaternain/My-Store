@@ -5,8 +5,8 @@ function BackButton() {
 
   return (
     <>
-      <button onClick={goBack}>
-        <span role='img' aria-label='Back Arrow'>
+      <button onClick={goBack} className='backButton'>
+        <span role='img' aria-label='Back Arrow' className='backButton_arrow'>
           &#8592;
         </span>{' '}
         Back
@@ -14,3 +14,5 @@ function BackButton() {
     </>
   );
 }
+
+export default BackButton;
