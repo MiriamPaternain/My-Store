@@ -6,6 +6,7 @@ import LandingPage from './landing/LandingPage';
 import getDataFromApi from '../services/api';
 import ls from '../services/localStorage';
 import DetailProduct from './MainPage/DetailProduct';
+import FilterProducts from './MainPage/FilterProducts';
 
 function App() {
   const [ProductsList, setProductsList] = useState(ls.get('products', []));

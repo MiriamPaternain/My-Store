@@ -1,0 +1,12 @@
+.backButton {
+  border: none;
+  background-color: white;
+  transform: translateX(40px);
+  font-size: 1rem;
+  cursor: pointer;
+
+  &_arrow {
+    font-size: 24px;
+    margin-left: 6px;
+  }
+}

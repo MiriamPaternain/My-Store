@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-=======
-import { useState, useEffect } from 'react';
->>>>>>> main
 import { Link } from 'react-router-dom';
-
+import { useEffect, useState } from 'react';
 function NavBar({ menuOpen, handleClick }) {
   const [categories, setCategories] = useState([]);
 
@@ -24,31 +20,9 @@ function NavBar({ menuOpen, handleClick }) {
               Landing Page
             </Link>
             <Link to='/ProductsPage' onClick={handleClick} className='link'>
-<<<<<<< HEAD
               Products
             </Link>
             <Link to='/' onClick={handleClick} className='link'>
-=======
-              AllProducts
-            </Link>
-            {categories.length > 0 && (
-              <ul className='subcategories'>
-                {categories.map((categoryItem, index) => (
-                  <li key={index}>
-                    {/* Cada categoría tiene su propia ruta */}
-                    <Link
-                      to={`/products/category/${categoryItem}`}
-                      onClick={handleClick}
-                      className='subcategories_link'>
-                      {categoryItem}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            <Link to='/cart' onClick={handleClick} className='link'>
->>>>>>> main
               Shopping cart
             </Link>
             <Link to='/contact' onClick={handleClick} className='link'>
