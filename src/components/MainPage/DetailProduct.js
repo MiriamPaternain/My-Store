@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import Header from '../MainPage/Header/Header';
+import Header from './Header/Header';
 import BackButton from '../BackButton';
 
 const DetailProduct = ({ products }) => {

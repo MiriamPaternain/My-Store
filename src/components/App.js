@@ -7,9 +7,11 @@ import getDataFromApi from '../services/api';
 import ls from '../services/localStorage';
 import DetailProduct from './MainPage/DetailProduct';
 import FilterProducts from './MainPage/FilterProducts';
+import ShoppingCart from './MainPage/ShoppingCart';
 
 function App() {
   const [ProductsList, setProductsList] = useState(ls.get('products', []));
+  const [boughtItems, setBoughtItems] = useState([]);
 
   useEffect(() => {
     if (localStorage.getItem('products') === null) {
@@ -32,6 +34,10 @@ function App() {
         <Route
           path='/products/category/:category'
           element={<FilterProducts />}
+        />
+        <Route
+          path='/cart'
+          element={<ShoppingCart boughtItems={boughtItems} />}
         />
       </Routes>
     </>
