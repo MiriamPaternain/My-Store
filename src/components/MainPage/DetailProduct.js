@@ -3,7 +3,7 @@ import Header from './Header/Header';
 import BackButton from '../BackButton';
 import ShoppingCartButton from './ShoppingCartButton';
 
-const DetailProduct = ({ products }) => {
+const DetailProduct = ({ products, addToCart }) => {
   const { id } = useParams();
 
   const product = products.find((p) => p.id === Number(id));
@@ -25,7 +25,8 @@ const DetailProduct = ({ products }) => {
         />
         <p className='detailProduct_description'>{product.description}</p>
         <p className='detailProduct_price'>
-          {product.price} € <ShoppingCartButton />
+          {product.price} €{' '}
+          <ShoppingCartButton product={product} onAddToCart={addToCart} />
         </p>
       </div>
     </>

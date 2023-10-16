@@ -20,6 +20,10 @@ function App() {
 
   const [boughtItems, setBoughtItems] = useState([]);
 
+  const addToCart = (product) => {
+    setBoughtItems((prevItems) => [...prevItems, product]);
+  };
+
   useEffect(() => {
     if (localStorage.getItem('products') === null) {
       getDataFromApi().then((cleanData) => {
@@ -36,7 +40,9 @@ function App() {
         <Route path='/ProductsPage' element={<ProductsPage />} />
         <Route
           path='/product/:id'
-          element={<DetailProduct products={ProductsList} />}
+          element={
+            <DetailProduct products={ProductsList} addToCart={addToCart} />
+          }
         />
         <Route
           path='/products/category/:category'

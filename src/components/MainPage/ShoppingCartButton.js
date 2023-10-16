@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
 
-function ShoppingCartButton({ product, onClick }) {
+function ShoppingCartButton({ product, onAddToCart }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleAddToCart = (product) => {
+  const handleAddToCart = () => {
+    onAddToCart(product);
     setIsModalOpen(true);
   };
 
