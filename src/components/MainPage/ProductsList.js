@@ -3,7 +3,7 @@ import getDataFromApi from '../../services/api';
 import { Link } from 'react-router-dom';
 import ShoppingCartButton from './ShoppingCartButton';
 
-const ProductsList = ({ handleAddToCart }) => {
+const ProductsList = ({ addToCart }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const ProductsList = ({ handleAddToCart }) => {
               {product.price} €{' '}
               <ShoppingCartButton
                 product={product}
-                onClick={() => handleAddToCart}
+                onAddToCart={() => addToCart(product)}
               />
             </p>
             <p className='productList_eachItem--description'>

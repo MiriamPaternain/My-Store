@@ -4,12 +4,12 @@ import Nav from './Header/Header';
 import BackButton from '../BackButton';
 import Header from './Header/Header';
 
-function ProductsPage() {
+function ProductsPage({ addToCart }) {
   return (
     <>
       <Header />
       <BackButton />
-      <ProductsList />
+      <ProductsList addToCart={addToCart} />
     </>
   );
 }

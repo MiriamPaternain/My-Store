@@ -37,7 +37,10 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<LandingPage />} />
-        <Route path='/ProductsPage' element={<ProductsPage />} />
+        <Route
+          path='/ProductsPage'
+          element={<ProductsPage addToCart={addToCart} />}
+        />
         <Route
           path='/product/:id'
           element={
