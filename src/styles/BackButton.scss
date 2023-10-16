@@ -1,10 +1,11 @@
 .backButton {
   border: none;
-  background-color: white;
+  background-color: transparent;
   transform: translateX(40px);
   font-size: 1rem;
+  font-weight: 800;
   cursor: pointer;
-
+  position: fixed;
   &_arrow {
     font-size: 24px;
     margin-left: 6px;
