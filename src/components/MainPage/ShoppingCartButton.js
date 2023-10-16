@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
+import { Link, NavLink } from 'react-router-dom';
 
 function ShoppingCartButton({ product, onAddToCart }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -37,6 +38,9 @@ function AddedtoCartModal({ isModalOpen, onRequestClose }) {
           This product has beend added to your shopping cart.
         </p>
         <button onClick={onRequestClose}>Close</button>
+        <Link to='/cart' className='link_goToShoppingCart'>
+          Go to Shopping Cart
+        </Link>
       </div>
     </Modal>
   );
