@@ -1,7 +1,9 @@
-import BackButton from '../BackButton';
-import Header from './Header/Header';
+import BackButton from './BackButton';
+import Header from './MainPage/Header/Header';
 
 function ShoppingCart({ boughtItems }) {
+  const total = boughtItems.reduce((sum, item) => sum + item.price, 0);
+
   return (
     <>
       <Header />
@@ -15,6 +17,9 @@ function ShoppingCart({ boughtItems }) {
           </li>
         ))}
       </ul>
+      <div>
+        <p className='ShoppingCart_total'>Total: {total} €</p>
+      </div>
     </>
   );
 }

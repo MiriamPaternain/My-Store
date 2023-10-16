@@ -11,9 +11,8 @@ import LandingPage from './landing/LandingPage';
 import getDataFromApi from '../services/api';
 import ls from '../services/localStorage';
 import DetailProduct from './MainPage/DetailProduct';
-import FilterProducts from './MainPage/FilterProducts';
-import ShoppingCart from './MainPage/ShoppingCart';
-import AddedtoCartModal from './MainPage/AddedToCartModal';
+import FilterProducts from './MainPage/Header/FilterProducts';
+import ShoppingCart from './ShoppingCart';
 
 function App() {
   const [ProductsList, setProductsList] = useState(ls.get('products', []));

@@ -1,4 +1,4 @@
-import FilterProducts from './FilterProducts';
+import FilterProducts from './Header/FilterProducts';
 import ProductsList from './ProductsList';
 import Nav from './Header/Header';
 import BackButton from '../BackButton';

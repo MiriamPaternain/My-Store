@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import getDataFromApi from '../../services/api';
+import getDataFromApi from '../../../services/api';
 import { Link } from 'react-router-dom';
-import Header from './Header/Header';
-import BackButton from '../BackButton';
+import Header from './Header';
+import BackButton from '../../BackButton';
 
 function FilterProducts() {
   const { category } = useParams();
