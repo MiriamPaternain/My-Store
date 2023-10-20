@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/My-Store/static/css/main.6fcca103.css",
-    "main.js": "/My-Store/static/js/main.23f88d5c.js",
-    "static/media/landingBackground.jpg": "/My-Store/static/media/landingBackground.fadfadc27500d01190f8.jpg",
-    "index.html": "/My-Store/index.html",
-    "main.6fcca103.css.map": "/My-Store/static/css/main.6fcca103.css.map",
-    "main.23f88d5c.js.map": "/My-Store/static/js/main.23f88d5c.js.map"
+    "main.css": "/StoreApp/static/css/main.0ca60f57.css",
+    "main.js": "/StoreApp/static/js/main.21dbfeed.js",
+    "static/media/conjunto-ropa-mujer-moda-camisa-jeans-bolso-look-moda-hipster-endecha-plana.jpg": "/StoreApp/static/media/conjunto-ropa-mujer-moda-camisa-jeans-bolso-look-moda-hipster-endecha-plana.641b5057096153975acd.jpg",
+    "static/media/traje-hombre-casual.jpg": "/StoreApp/static/media/traje-hombre-casual.84dd775c4f1e23bfadf2.jpg",
+    "static/media/lugar-trabajo-negocios-accesorios-masculinos-modernos-portatil-blanco.jpg": "/StoreApp/static/media/lugar-trabajo-negocios-accesorios-masculinos-modernos-portatil-blanco.b90d2c2ee8f15385a0bc.jpg",
+    "static/media/coleccion-bodegones-viaje.jpg": "/StoreApp/static/media/coleccion-bodegones-viaje.1fca401a08e4c9cd27c7.jpg",
+    "index.html": "/StoreApp/index.html",
+    "main.0ca60f57.css.map": "/StoreApp/static/css/main.0ca60f57.css.map",
+    "main.21dbfeed.js.map": "/StoreApp/static/js/main.21dbfeed.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fcca103.css",
-    "static/js/main.23f88d5c.js"
+    "static/css/main.0ca60f57.css",
+    "static/js/main.21dbfeed.js"
   ]
 }
