@@ -1,4 +1,3 @@
-import flechaDoble from '../../img/doble-derecha.png';
 import { Link } from 'react-router-dom';
 
 function AccessButton() {
