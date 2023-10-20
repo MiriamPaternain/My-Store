@@ -1,15 +1,16 @@
 .sliderContainer {
-  display: flex;
+  /*   display: flex;
   width: 100%;
   height: 40vh;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  transform: translateY(27px);
+  transform: translateY(22px); */
   &_img {
-    flex: 0 0 100%;
+    height: 40vh;
     width: 100%;
     object-fit: cover;
-    scroll-snap-align: center;
-    cursor: ew-resize;
+    margin-top: 26px;
+    /*  scroll-snap-align: center;
+    cursor: ew-resize; */
   }
 }
