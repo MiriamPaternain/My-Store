@@ -1,4 +1,4 @@
-# Store App in construction 🚧 👷🏻‍♀️
+# My Store web App in construction 🚧 👷🏻‍♀️
 - clone the code
   + npm install
   + npm start
