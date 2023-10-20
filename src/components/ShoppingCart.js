@@ -13,6 +13,11 @@ function ShoppingCart({ boughtItems }) {
         {boughtItems.map((item, index) => (
           <li key={index} className='ShoppingCart_list'>
             <p>{item.title}</p>
+            <img
+              src={item.image}
+              alt={item.title}
+              className='ShoppingCart_img'
+            />
             <p>{item.price} €</p>
           </li>
         ))}

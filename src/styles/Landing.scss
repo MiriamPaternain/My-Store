@@ -1,29 +1,28 @@
 .main {
-  background-image: url('../img/landingBackground.jpg');
-  background-size: cover;
-  background-position: center;
+  background: #fff8dc;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   &_text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    margin-left: 100px;
+    margin-top: 40px;
+    gap: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
       sans-serif;
+    font-size: 8rem;
+    font-weight: 600;
     &--title {
-      padding: 15px;
-      font-size: 3rem;
-      color: #bdb2aa;
+      color: #2c2723;
     }
 
     &--quote {
       font-size: 1.4rem;
-      color: #bdb2aa;
+      color: #554d47;
     }
   }
 }
@@ -33,30 +32,21 @@
 }
 
 .landingButton {
-  margin-top: 30px;
-
-  height: 100px;
+  height: 80px;
   width: 200px;
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 1px;
-  border-radius: 10px;
-  box-shadow: 5px 8px 8px #2d2321;
+  border: #f6d654 3px solid;
+  background-color: #f6d654;
   cursor: pointer;
-
-  &_arrows {
-    transform: translate(-8px);
-  }
-
-  &_word {
-    transform: translate(-5px);
-    color: #695d58;
-  }
+  transform: translate(720px, -100px);
+  color: #fff8dc;
 }
 
 .landingButton:hover {
-  width: 205px;
-  height: 105px;
+  background-color: #fff8dc;
+  color: #f6d654;
 }

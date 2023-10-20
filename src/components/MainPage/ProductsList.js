@@ -15,7 +15,7 @@ const ProductsList = ({ addToCart }) => {
 
   return (
     <div className='productList_containter'>
-      <h1 className='productList_container--title'>All the products</h1>
+      <h1 className='productList_container--title'>All products</h1>
       <ul className='productList_list'>
         {products.map((product) => (
           <li key={product.id} className='productList_eachItem'>
