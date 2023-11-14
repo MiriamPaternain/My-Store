@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/StoreApp/static/css/main.0ff1a8d9.css",
-    "main.js": "/StoreApp/static/js/main.efdcab6b.js",
-    "static/media/maleta-repleta-parafernalia-viaje.jpg": "/StoreApp/static/media/maleta-repleta-parafernalia-viaje.cac9de64920d4d488259.jpg",
-    "static/media/traje-hombre-casual.jpg": "/StoreApp/static/media/traje-hombre-casual.84dd775c4f1e23bfadf2.jpg",
-    "static/media/coleccion-elementos-esenciales-alto-angulo-viaje.jpg": "/StoreApp/static/media/coleccion-elementos-esenciales-alto-angulo-viaje.0dc7c2bde348333af1a0.jpg",
-    "static/media/coleccion-bodegones-viaje.jpg": "/StoreApp/static/media/coleccion-bodegones-viaje.1fca401a08e4c9cd27c7.jpg",
-    "static/media/vista-superior-paquete-bodegon-viaje.jpg": "/StoreApp/static/media/vista-superior-paquete-bodegon-viaje.07847470a9510118ca7c.jpg",
-    "static/media/marca-de-verificacion.png": "/StoreApp/static/media/marca-de-verificacion.5042ea7d376a4f3adc06.png",
-    "static/media/slick.svg": "/StoreApp/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/StoreApp/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/StoreApp/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/StoreApp/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/StoreApp/index.html",
-    "main.0ff1a8d9.css.map": "/StoreApp/static/css/main.0ff1a8d9.css.map",
-    "main.efdcab6b.js.map": "/StoreApp/static/js/main.efdcab6b.js.map"
+    "main.css": "/My-Store/static/css/main.1e0841ea.css",
+    "main.js": "/My-Store/static/js/main.73df626e.js",
+    "static/media/maleta-repleta-parafernalia-viaje.jpg": "/My-Store/static/media/maleta-repleta-parafernalia-viaje.cac9de64920d4d488259.jpg",
+    "static/media/traje-hombre-casual.jpg": "/My-Store/static/media/traje-hombre-casual.84dd775c4f1e23bfadf2.jpg",
+    "static/media/coleccion-elementos-esenciales-alto-angulo-viaje.jpg": "/My-Store/static/media/coleccion-elementos-esenciales-alto-angulo-viaje.0dc7c2bde348333af1a0.jpg",
+    "static/media/coleccion-bodegones-viaje.jpg": "/My-Store/static/media/coleccion-bodegones-viaje.1fca401a08e4c9cd27c7.jpg",
+    "static/media/vista-superior-paquete-bodegon-viaje.jpg": "/My-Store/static/media/vista-superior-paquete-bodegon-viaje.07847470a9510118ca7c.jpg",
+    "static/media/marca-de-verificacion.png": "/My-Store/static/media/marca-de-verificacion.5042ea7d376a4f3adc06.png",
+    "static/media/slick.svg": "/My-Store/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/My-Store/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/My-Store/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/My-Store/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/My-Store/index.html",
+    "main.1e0841ea.css.map": "/My-Store/static/css/main.1e0841ea.css.map",
+    "main.73df626e.js.map": "/My-Store/static/js/main.73df626e.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ff1a8d9.css",
-    "static/js/main.efdcab6b.js"
+    "static/css/main.1e0841ea.css",
+    "static/js/main.73df626e.js"
   ]
 }
