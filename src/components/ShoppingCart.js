@@ -23,7 +23,7 @@ function ShoppingCart({ boughtItems }) {
         ))}
       </ul>
       <div>
-        <p className='ShoppingCart_total'>Total: {total} €</p>
+        <p className='ShoppingCart_total'>Sub-total: {total} €</p>
       </div>
     </>
   );
