@@ -7,9 +7,11 @@ import Header from './Header/Header';
 function ProductsPage({ addToCart }) {
   return (
     <>
-      <Header />
-      <BackButton />
-      <ProductsList addToCart={addToCart} />
+      <div className='mainContainer'>
+        <Header />
+        <BackButton />
+        <ProductsList addToCart={addToCart} />
+      </div>
     </>
   );
 }
