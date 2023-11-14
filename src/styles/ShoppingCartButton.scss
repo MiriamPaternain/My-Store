@@ -6,8 +6,14 @@
   text-decoration: none;
   cursor: pointer;
   color: gray;
+  font-size: 1.2rem;
+  border: 0.4px solid grey;
+  padding: 15px;
+  background-color: rgb(238, 238, 236);
 }
 .link_goToShoppingCart:hover {
   color: rgb(99, 60, 28);
-  text-decoration: underline;
+
+  background-color: #fff8dc;
+  border: 0.6px solid grey;
 }
