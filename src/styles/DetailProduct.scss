@@ -16,6 +16,10 @@
   &_image {
     height: 50vh;
     width: 50wh;
+    border: 0.1px solid grey;
+    border-radius: 5px;
+    padding: 40px;
+    background-color: white;
   }
 
   &_description {
